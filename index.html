@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -17,10 +21,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
      <header>
-        <nav>
-            <h2>ONAH ELDQUIN OZOANI</h2>
-            <button id="toggleBtn"> <i class="fa-solid fa-bars"></i> </button>
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo"> ONAH ELDQUIN OZOANI</div>
+                    <label for="menu-toggle" class="menu-toggle">
+                       <button id="toggleBtn"> <i class="fa-solid fa-bars"></i> </button>
+                    </label>
+
             <ul>
                 <li> <a href="#home">Home</a> </li>
                 <li> <a href="#about">About</a> </li>
@@ -28,125 +38,275 @@
                 <li> <a href="#projects">Project</a> </li>
                 <li> <a href="#contact">Contact</a> </li>
             </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
      <main>
-
+     <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-text">
-                <div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
                     <h1>Hello, I am ONAH ELDQUIN OZOANI</h1>
-                    <h2>Aspiring Full-Stack Web Developer</h2>
+                     <p>Aspiring Full-Stack Web Developer</p>
                     <p>I am learning to build responsive and modern websites</p>
+                    <a href="#projects" class="cta-button">View My Work</a>
+                    </div>
+                <div class="hero-image">
+                    <img src="./images/my picture.png" alt="My personal picture">
+                </div>
             </div>
-            
-            <div class="hero-button">
-
-       
-                <a href="#projects" class="">View My Work</a>
-            </div>
-        </div>
-    </section>
+        </section>
+     <!-- About Me Section -->
 
      <section id="about" class="about">
-        <div class="about-container">
-            <h2> ABOUT ME
-         
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image"><img src="./images/my professional picture.png" alt="My professional photo">
+            </div>
+
+              <div>
+                <h2>ABOUT ME</h2>
                 <p>A little background story of myself, i am the First daughter of 4 children of a monogamous family. I am an indigene of Enugu state, i had all my formal Education in schools in the same state. I am  Medical Laboratory scientist by profession, i am currently practicing and i would say that i enjoy saving lives. I am also a hairstylist, i am in the business of making girls look beautiful and i dont play about that. </p>
 
                 <p>I am driven by a passion for self-improvement and strong desire to make difference, whether it is advancing in healthcare or expressing creativity in hairstyling. I am soo determined to make a difference and constantly up scale. I have a zeal to be way better than who i was yesterday. </p>
 
                 <p>We can all agree that the world is advancing very fast technically. We are currently in an era  where almost everything is woven aroud advanced technologies. Being someone who loves to upscale and be better, i found this opportunity  to leran full stack web development and decided to give it a try. Might i add that i had zero knowledge prior but i am willing to push hard. </p> 
-                </h2>
-          <div class="about-image"><img src="./images/my professional picture.png" alt="My professional photo"></div>
-            
+              </div>
+            </div>
         </div>
     </section>
 
+<!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2>Technologies I have Learned</h2>
+     <div class="container">
+         <h2>Technologies I have Learned</h2>
+            <div class="skills-grid">
+               <div class="skill-card">
+                  <div class="skill-icon">
+                      <i class="fa-brands fa-html5"></i>
+                   </div>
+                    <h3>HTML5</h3>
+               </div>
 
-        <div class="skill-set">
+               <div class="skill-card">
+                   <div class="skill-icon">
+                     <i class="fa-brands fa-css"></i>
+                    </div>
+                   <h3>CSS</h3>
+               </div>
 
-            <div>
-               <i class="fa-brands fa-html5"></i> HTML5
-            </div>
+               <div class="skill-card">
+                  <div class="skill-icon">
+                     <i class="fa-brands fa-git-alt"></i> 
+                    </div>
+                    <h3>GIT</h3>
+              </div>
 
-            <div>
-               <i class="fa-brands fa-css"></i> CSS
-            </div>
-            <div>
-               <i class="fa-brands fa-git-alt"></i> GIT
-            </div>
+               <div class="skill-card">
+                   <div class="skill-icon">
+                     <i class="fa-brands fa-chrome"></i>
+                    </div>
+                       <h3> Chrome Dev Tools</h3>
+                </div>
 
-            <div>
-                <i class="fa-brands fa-chrome"></i> Chrome Dev Tools
-            </div>
-            <div>
-                <i class="fa-brands fa-github"></i> GITHUB
-            </div>
-            <div>
-                <img src="./images/grid.png" alt="Grid Box" width="20" height="20"> Grid Box
-            </div>
-            <div>
-                <img src="./images/visual-studio.png" alt="visuao code" width="18" height="18"> visual-studio 
+                <div class="skill-card">
+                   <div class="skill-icon">
+                     <i class="fa-brands fa-github"></i> GITHUB
+                    </div>
+                    <h3> GITHUB</h3>
+               </div>
+
+               <div class="skill-card">
+                   <div class="skill-icon">
+                      <img src="./images/grid.png" alt="Grid Box" width="20" height="20">
+                    </div>
+                   <h3>CSS GRID</h3>
+                </div>
+
+               <div class="skill-card">
+                  <div class="skill-icon">
+                      <img src="./images/visual-studio.png" alt="visuao code" width="18" height="18">  
+                    </div>
+                  <h3>VS CODE</h3>
+              </div>
+          </div>
+        </div>
+ 
+    </section>
+<!-- Project Section -->
+    <section id="projets" class="project">
+        <div class="container">
+             <h2>My Projects</h2>
+              <div  class="projects-grid">
+                 <div class="projects-card">
+                     <div class="project-image">
+                        <img src="./images/Placeholder 1.jpg" alt="Travel Agency Website">
+                     </div>
+                         <div class="project-content">
+                             <h3>Travel Website</h3>
+                             <p>A website for booking travel experiences</p>
+                         </div>
+                         <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">FLEXBOX</span>
+                            <span class="tag">Grid</span>
+                         </div>
+                    </div>
+
+                    <div class="projects-card">
+                           <div class="project-image">
+                                <img src="./images/placeholder 2.jpg" alt="project">
+                            </div>
+                               
+                             <div class="project-content">
+                                 <h3>Restaurant Website</h3>
+                                <p>Online Restaurant menu and booking system</p>
+                               </div>
+                                <div class="project-tags"> 
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">FLEXBOX</span>
+                                    <span class="tag">Grid</span>
+                                </div>
+                    </div>
+
+                    <div class="projects-card">
+                        <div class="project-image">
+                            <img src="./images/placeholder 3.jpg" alt="E-commerce project">
+                        </div>
+
+                        <div class="project-content">
+                            <h3>E-commerce Store</h3>
+                            <p>Full-featured online store with product catalog, shopping cart, and checkout interface.</p>
+
+                        </div>
+                        <div class="project-tags">
+                                   <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">FLEXBOX</span>
+                                    <span class="tag">Grid</span>
+                        </div>
+                    </div>
+
+                    <div class="projects-card">
+                        <div>
+                           <img src="./images/Placeholder 1.jpg" alt="My project">
+                        </div>
+                        <div class="project-content">
+                             <h3>Portfolio Showcase</h3>
+                             <p>Personal portfolio website demonstrating modern web design principles and responsive layouts.</p>
+                               <div class="project-tags">
+                                   <span class="tag">HTML5</span>
+                                   <span class="tag">CSS3</span>
+                                   <span class="tag">Flexbox</span>
+                                   <span class="tag">Grid</span>
+                                </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ozoanidelona/personal-project-html" class="project-link">Live Demo →</a>
+                            <a href="https://github.com/ozoanidelona/personal-project-html.git" class="project-link">GitHub →</a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+            
+    </section>
+    <!-- Contact Section -->
+     <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'm always open to new opportunities and collaborations. Whether you have a question or just want to say hi, feel free to reach out!</p>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Connect With Me</h3>
+                    <p>Feel free to reach out through any of these platforms. I'd love to hear from you!</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/onahnwaeze_ozoani?igsh=MTJ0d25wejFuNHM0dA%3D%3D&utm_source=qr" target="_blank">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                             </a>
+                             <span>Instagram</span>
+                             
+                            
+                    
+                         
+                          <a href="https://www.linkedin.com/in/onah-ozoani-2365173aa?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </a>
+                        <span>LinkedIn Profile</span>
+
+                        <a  href="https://github.com/ozoanidelona" target="_blank">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>    
+                        </a>
+                        <span>Github Profile</span>
+
+                        <a  href="mailto:ozoanidelona@gmail.com.com" class="social-link">
+                            <div class="social-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </a>
+                        <span>Email.Address</span>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </section>
-
-    <section id="" class="contact">
-        <div class="contact-heading">
-            <h2>Get In Touch</h2>
-            <p></p>
-    </div>
-
-    <form >
-       
-        <div class="contact-container">
-             <div class="full-name">
-            <label for="fullname">Full-Name</label>
-            <input type="text" id="fullname" placeholder="Enter Your Full-Name">
+ </main>  
+   
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/onah-ozoani-2365173aa?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                     <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ozoanidelona" target="_blank">
+                     <i class="fa-brands fa-github"></i>
+                    
+                    </a>
+                    <a href= "https://www.instagram.com/ onahnwaeze_ozoani?igsh=MTJ0d25wejFuNHM0dA%3D%3D&utm_source=qr" target="_blank">
+                     <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="footer-divider"></div>
+                <p class="footer-text">&copy; 2026 ONAH ELDQUIN OZOANI. All rights reserved.</p>
+            </div>
         </div>
-
-
-        <div class="email">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="example@email.com">
-        </div>
-
-        <div class="comment">
-        <div>
-
-            <label for="comment">Comment</label>
-            <textarea  id="comment">Leave a comment</textarea>
-        </div>
-
-        <button type="submit">Send</button>
-        </div>
-    </form>
-
-        <div class="contact-info">
-
-          <a href="https://www.instagram.com/onahnwaeze_ozoani?igsh=MTJ0d25wejFuNHM0dA%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
-
-          <a href="https://www.linkedin.com/in/onah-ozoani-2365173aa?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
-
-           <a href="https://github.com/ozoanidelona" target="_blank"><i class="fa-brands fa-github"></i></a>
-        
-            <p>Email: ozoanidelona@gmail.com</p>
-        </div>
-    </section>
- </main>
-
-    <footer>
-        &copy; All rights Reserved. onah ozoani 2026
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-github"></i>
     </footer>
+
+    
     
 
 </body>
 </html>
+
+
